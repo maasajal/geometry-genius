@@ -19,12 +19,18 @@ function calculateParallelogramArea() {
   setArea("parallelogramArea", area);
   console.log(area);
 }
-
 function calculateRhombusArea() {
   const d1 = getInputValue("rhombus-d1");
   const d2 = getInputValue("rhombus-d2");
   const area = 0.5 * d1 * d2;
   setArea("rhombusArea", area);
+  console.log(area);
+}
+function calculatePentagonArea() {
+  const p = getInputValue("pentagon-p");
+  const b = getInputValue("pentagon-base");
+  const area = 0.5 * p * b;
+  setArea("pentagonArea", area);
   console.log(area);
 }
 function getInputValue(idName) {
