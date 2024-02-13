@@ -13,9 +13,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="w-11/12 mx-auto">
-    <header class="my-12">
-      <h1 class="text-3xl">Interactive</h1>
-      <h3 class="text-xl">Geometry Genius</h3>
+    <header class="my-12 flex justify-between bg-teal-100 p-5 rounded-lg">
+      <div>
+        <h1 class="text-3xl text-black">Interactive</h1>
+        <h3 class="text-xl text-black">Geometry Genius</h3>
+      </div>
+      <div class="">
+        <button class="btn btn-primary text-white px-8">Blog</button>
+      </div>
     </header>
     <main>
       <div class="flex flex-col md:flex-row lg:flex-row gap-5">
@@ -263,7 +268,7 @@
           </div>
         </div>
         <!-- Geometry area calculation -->
-        <div class="w-96 border border-r-2 p-4">
+        <div class="w-56 border border-r-2 p-4">
           <h2 class="text-center">Area Calculation</h2>
           <hr />
           <div class="my-8">
