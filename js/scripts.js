@@ -5,7 +5,13 @@ function calculateTriangleArea() {
   setArea("triangleArea", area);
   console.log(area);
 }
-
+function calculateRectArea() {
+  const width = getInputValue("rectangleWidth");
+  const length = getInputValue("rectangleLength");
+  const area = width * length;
+  setArea("rectangleArea", area);
+  console.log(area);
+}
 function getInputValue(idName) {
   const value = parseFloat(document.getElementById(idName).value);
   return value;

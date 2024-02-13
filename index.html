@@ -12,18 +12,18 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-9/12 mx-auto">
+  <body class="w-11/12 mx-auto">
     <header class="my-12">
       <h1 class="text-3xl">Interactive</h1>
       <h3 class="text-xl">Geometry Genius</h3>
     </header>
     <main>
-      <div class="flex flex-col md:flex-row lg:flex-row">
+      <div class="flex flex-col md:flex-row lg:flex-row gap-5">
         <!-- Geometry containers -->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <!-- Triangle card -->
-          <div class="card w-96 bg-base-100 shadow-xl text-center">
-            <figure>
+          <div class="card bg-base-100 shadow-xl text-center">
+            <figure class="p-8">
               <img src="./images/triangle.png" alt="Triangle" />
             </figure>
             <div class="card-body">
@@ -61,6 +61,46 @@
               </div>
             </div>
           </div>
+          <!-- Rectangle card -->
+          <div class="card bg-base-100 shadow-xl text-center">
+            <figure class="p-8">
+              <img src="./images/rectangle.png" alt="rectangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-3xl">Rectangle</h2>
+              <p>Area (A) = w X l</p>
+              <div class="flex justify-evenly">
+                <label for="rectangleWidth">
+                  <input
+                    class="p-2 w-24"
+                    type="text"
+                    name="rectangleWidth"
+                    id="rectangleWidth"
+                    placeholder="w"
+                  />
+                  cm
+                </label>
+                <label for="rectangleLength">
+                  <input
+                    class="p-2 w-24"
+                    type="text"
+                    name="rectangleLength"
+                    id="rectangleLength"
+                    placeholder="l"
+                  />
+                  cm
+                </label>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateRectArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Geometry area calculation -->
         <div class="w-96 border border-r-2 p-4">
@@ -68,6 +108,7 @@
           <hr />
           <div class="my-8">
             <p>Triangle Area: <span id="triangleArea"></span></p>
+            <p>Rectangle Area: <span id="rectangleArea"></span></p>
           </div>
         </div>
       </div>
