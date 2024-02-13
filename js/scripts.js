@@ -12,6 +12,13 @@ function calculateRectArea() {
   setArea("rectangleArea", area);
   console.log(area);
 }
+function calculateParallelogramArea() {
+    const base = getInputValue("para-base");
+    const height = getInputValue("para-height");
+    const area = base * height;
+    setArea("parallelogramArea", area);
+    console.log(area);
+  }
 function getInputValue(idName) {
   const value = parseFloat(document.getElementById(idName).value);
   return value;

@@ -101,6 +101,47 @@
               </div>
             </div>
           </div>
+
+          <!-- Parallelogram card -->
+          <div class="card bg-base-100 shadow-xl text-center">
+            <figure class="p-8">
+              <img src="./images/parallelogram.png" alt="parallelogram" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-3xl">Parallelogram</h2>
+              <p>Area (A) = b X h</p>
+              <div class="flex justify-evenly">
+                <label for="para-base">
+                  <input
+                    class="p-2 w-24"
+                    type="text"
+                    name="para-base"
+                    id="para-base"
+                    placeholder="b"
+                  />
+                  cm
+                </label>
+                <label for="para-height">
+                  <input
+                    class="p-2 w-24"
+                    type="text"
+                    name="para-height"
+                    id="para-height"
+                    placeholder="h"
+                  />
+                  cm
+                </label>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateParallelogramArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Geometry area calculation -->
         <div class="w-96 border border-r-2 p-4">
@@ -109,6 +150,7 @@
           <div class="my-8">
             <p>Triangle Area: <span id="triangleArea"></span></p>
             <p>Rectangle Area: <span id="rectangleArea"></span></p>
+            <p>Parallelogram Area: <span id="parallelogramArea"></span></p>
           </div>
         </div>
       </div>
