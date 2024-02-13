@@ -221,6 +221,46 @@
               </div>
             </div>
           </div>
+          <!-- Ellipse card -->
+          <div class="card bg-base-100 shadow-xl text-center">
+            <figure class="p-8">
+              <img src="./images/ellipse.png" alt="ellipse" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-3xl">Ellipse</h2>
+              <p>Area (A) = π X a X b</p>
+              <div class="flex justify-evenly">
+                <label for="ellipse-a">
+                  <input
+                    class="p-2 w-24"
+                    type="text"
+                    name="ellipse-a"
+                    id="ellipse-a"
+                    placeholder="a"
+                  />
+                  cm
+                </label>
+                <label for="ellipse-b">
+                  <input
+                    class="p-2 w-24"
+                    type="text"
+                    name="ellipse-b"
+                    id="ellipse-b"
+                    placeholder="b"
+                  />
+                  cm
+                </label>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateEllipseArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Geometry area calculation -->
         <div class="w-96 border border-r-2 p-4">
@@ -232,6 +272,7 @@
             <p>Parallelogram Area: <span id="parallelogramArea"></span></p>
             <p>Rhombus Area: <span id="rhombusArea"></span></p>
             <p>Pentagon Area: <span id="pentagonArea"></span></p>
+            <p>Ellipse Area: <span id="ellipseArea"></span></p>
           </div>
         </div>
       </div>

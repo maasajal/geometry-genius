@@ -33,6 +33,14 @@ function calculatePentagonArea() {
   setArea("pentagonArea", area);
   console.log(area);
 }
+function calculateEllipseArea() {
+  const a = getInputValue("ellipse-a");
+  const b = getInputValue("ellipse-b");
+  const pi = 3.14;
+  const area = pi * a * b;
+  setArea("ellipseArea", area.toFixed(2));
+  console.log(area);
+}
 function getInputValue(idName) {
   const value = parseFloat(document.getElementById(idName).value);
   return value;
